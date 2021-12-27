@@ -1,5 +1,5 @@
 # Ansible-Vagrant
-Vagrant manage the virtual environment on the local VirtualBox on Ubuntu version and Ansible is used to do the configration required to setup the application. There are 4 Ansible roles create setup the frontend, backend, database and installing Node on the VM. 
+Vagrant manage the virtual environment on the local VirtualBox on Ubuntu version and Ansible is used to do the configration required to setup the application. There are 4 Ansible roles created to setup the frontend, backend, database and installing Node JS on the VM. 
 
 ![Application-Setup](https://github.com/karan-sohi/ansible-vagrant/blob/main/images/application-setup.png)
 
