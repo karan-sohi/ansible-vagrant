@@ -1,0 +1,16 @@
+---
+# tasks file for nodejs
+- name: download the installation script
+  get_url: 
+    url: https://deb.nodesource.com/setup_14.x 
+    dest: /home/vagrant/install_node_script
+  register: download_script
+- name: Add the repos to the repo list
+  become: true
+  shell: bash /home/vagrant/install_node_script
+  when: download_script.changed
+- name: make sure that the Nodejs is installed
+  become: true
+  package: 
+    name: nodejs
+    state: present

@@ -1,0 +1,18 @@
+---
+- hosts: app
+  vars:
+    http_static_dir: /home/vagrant/frontend/build
+    http_backend_url: http://localhost:8080
+  tasks: 
+    - name: Include the nodejs role
+      include_role: 
+        name: nodejs
+    - name: Include the database role
+      include_role:
+        name: database
+    - name: Include the backend role
+      include_role:
+        name: backend
+    - name: Include the frontend role
+      include_role: 
+        name: frontend

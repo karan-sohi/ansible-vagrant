@@ -1,0 +1,5 @@
+---
+# defaults file for frontend
+http_static_dir: /frontend
+http_api_location: /api
+http_backend_url: http://backend:8080

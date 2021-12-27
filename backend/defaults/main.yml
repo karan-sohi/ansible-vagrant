@@ -1,0 +1,8 @@
+---
+# defaults file for backend
+backend_user: backend
+backend_dir: /backend
+backend_db_host: db
+backend_db_name: tutorials
+backend_db_user: backend
+backend_db_password: acit4640
